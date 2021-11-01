@@ -1,0 +1,46 @@
+# push local directory to remote origin
+mkdir
+git init (initiate directory as repo)
+git remote add origin https://repo-url (add remote origin)
+git remove -v (verify origin)
+git remote rm origin (remove origin)
+git reset --mixed origin/main (unstage everything)
+git reset --soft (stage everyting)
+git reset --hard (ignore everything)
+git status
+git add .  (add all changes)
+git rm . (remove all changes)
+git commit -m 'message' (commit changes staged)
+git push -u origin main (push local changes to remote; update remote)
+git push -u origin main --force (delete previous commits;push current ones)
+
+# Logs
+git log (print history) (type q or z to quit)
+git log --pretty=oneline -- <file>
+
+
+# add a file to a remote branch 'main'
+git add .
+git commit -m "add file"
+git push origin main
+
+
+# clone a remote repository
+cd 
+git clone https://github.com/jade-flow/a590.git
+ls
+cd a590
+ls -all
+# pull remote update
+git remote -v (verify remote)
+git pull
+git pull origin main(branchname)
+
+
+# create branch
+git branch bname
+
+# switch branch
+git branch -a (list all branches)
+git checkout main (checkout the branch you want to use)
+
